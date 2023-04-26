@@ -8,9 +8,11 @@ packages = [{include = "socket_chat"}]
 
 [tool.poetry.scripts]
 socket-chat = "socket_chat.scripts.server:run"
+chat-client = "socket_chat.scripts.client:run"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+prompt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"

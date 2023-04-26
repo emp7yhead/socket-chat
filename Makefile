@@ -6,6 +6,9 @@ install:  ## Install dependencies
 run:  ## Run app
 	poetry run socket-chat
 
+client:  ## Run client app
+	poetry run chat-client
+
 lint:  ## Run linter check
 	poetry run flake8 socket_chat
 

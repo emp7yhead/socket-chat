@@ -6,6 +6,9 @@ authors = ["emp7yhead <artyomkropp@gmail.com>"]
 readme = "README.md"
 packages = [{include = "socket_chat"}]
 
+[tool.poetry.scripts]
+socket-chat = "socket_chat.scripts.server:run"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 

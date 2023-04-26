@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "socket-chat"
+version = "0.1.0"
+description = "chat builded with sockets"
+authors = ["emp7yhead <artyomkropp@gmail.com>"]
+readme = "README.md"
+packages = [{include = "socket_chat"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pytest = "^7.3.1"
+mypy = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

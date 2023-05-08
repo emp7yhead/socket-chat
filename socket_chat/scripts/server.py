@@ -6,7 +6,7 @@ import sys
 from socket_chat.server import ChatServer
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 HOST: str = 'localhost'
 PORT: int = 5000

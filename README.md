@@ -1,4 +1,4 @@
 # socket-chat
 
-CLI chat using sockets and asyncio
+CLI chat with sockets and asyncio
 

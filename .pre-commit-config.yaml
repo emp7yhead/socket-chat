@@ -1,10 +1,28 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
-    hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
--   repo: https://github.com/pycqa/flake8
-    rev: 6.0.0
-    hooks:
-    -   id: flake8
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.2.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+- repo: https://github.com/pycqa/flake8
+  rev: 6.0.0
+  hooks:
+  - id: flake8
+- repo: local
+  hooks:
+  - id: pytest-check
+    name: pytest-check
+    entry: pytest
+    stages: [commit]
+    types: [python]
+    language: system
+    pass_filenames: false
+    always_run: false
+  - id: mypy-check
+    name: mypy-check
+    entry: mypy socket_chat
+    stages: [commit]
+    types: [python]
+    language: system
+    pass_filenames: false
+    always_run: false

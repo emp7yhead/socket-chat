@@ -1,7 +1,8 @@
 #! /usr/bin/env python
 import asyncio
-import sys
 import logging
+import sys
+
 from socket_chat.client import ChatClient
 
 HOST: str = 'localhost'

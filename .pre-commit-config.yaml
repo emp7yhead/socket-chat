@@ -12,17 +12,17 @@ repos:
   hooks:
   - id: pytest-check
     name: pytest-check
-    entry: pytest
+    entry: poetry run pytest
     stages: [commit]
     types: [python]
     language: system
     pass_filenames: false
-    always_run: false
+    always_run: true
   - id: mypy-check
     name: mypy-check
-    entry: mypy socket_chat
+    entry: poetry run mypy socket_chat
     stages: [commit]
     types: [python]
     language: system
     pass_filenames: false
-    always_run: false
+    always_run: true
